@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    container_name: gtrend-api-server
+    image: lxneng/gtrend-api
+    ports:
+      - 8001:8001
+    volumes:
+      - ./Rocket.toml:/Rocket.toml
